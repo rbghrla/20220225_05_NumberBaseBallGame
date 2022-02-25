@@ -1,6 +1,7 @@
 package codes;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class MainDrive {
 
@@ -35,6 +36,17 @@ public class MainDrive {
 //		문제 확인용 for 문
 		for (int num : cpuNumbers) {
 			System.out.println(num);
+		}
+
+//		사용자가 정답을 맞출때 까지 입력받자
+
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			System.out.println("답안 입력 : ");
+			int inputNum = sc.nextInt();
+			
+//			321 => {3, 2, 1} 처럼 세칸 배열로 분리 / 맞춘 S, B 판정.
+
 		}
 	}
 }
