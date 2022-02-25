@@ -69,6 +69,14 @@ public class MainDrive {
 				}
 			}
 			System.out.println(strikeCount + "S, " + ballCount + "B입니다.");
+			
+//			3S 라면, 게임 종료
+			if(strikeCount == 3) {
+				System.out.println("축하합니다!");
+				
+				System.out.println("게임을 종료합니다.!");
+				break;
+			}
 
 		}
 	}
