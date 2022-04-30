@@ -7,15 +7,15 @@ public class MainDrive {
 
 	public static void main(String[] args) {
 
-//		ì»´í“¨í„°ê°€ ìˆ«ì ì¶œì œ
-//		int ì„¸ ì¹¸ì§œë¦¬ ë°°ì—´
+//		ÄÄÇ»ÅÍ°¡ ¼ıÀÚ ÃâÁ¦
+//		int ¼¼ Ä­Â¥¸® ¹è¿­
 
 		int[] cpuNumbers = new int[3];
 
 		for (int i = 0; i < cpuNumbers.length; i++) {
 			while (true) {
 				Random myRandom = new Random();
-				int randomNum = myRandom.nextInt(9) + 1; // 1 ~ 10 ì§ì „ (9)
+				int randomNum = myRandom.nextInt(9) + 1; // 1 ~ 10 Á÷Àü (9)
 
 				boolean isDuplOk = true;
 
@@ -33,19 +33,18 @@ public class MainDrive {
 
 		}
 
-//		ë¬¸ì œ í™•ì¸ìš© for ë¬¸
+//		¹®Á¦ È®ÀÎ¿ë for ¹®
 		for (int num : cpuNumbers) {
 			System.out.print(num);
 		}
 
-//		ì‚¬ìš©ìê°€ ì •ë‹µì„ ë§ì¶œë•Œ ê¹Œì§€ ì…ë ¥ë°›ì
-
+//		»ç¿ëÀÚ°¡ Á¤´äÀ» ¸ÂÃâ¶§ ±îÁö ÀÔ·Â¹ŞÀÚ
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			System.out.println("ë‹µì•ˆ ì…ë ¥ : ");
+			System.out.println("´ä¾ÈÀÔ·Â : ");
 			int inputNum = sc.nextInt();
 
-//			321 => {3, 2, 1} ì²˜ëŸ¼ ì„¸ì¹¸ ë°°ì—´ë¡œ ë¶„ë¦¬ / ë§ì¶˜ S, B íŒì •.
+//			321 => {3, 2, 1} Ã³·³ ¼¼Ä­ ¹è¿­·Î ºĞ¸® / ¸ÂÃá S, B ÆÇÁ¤.
 
 			int[] myNumbers = new int[3];
 
@@ -68,13 +67,13 @@ public class MainDrive {
 					}
 				}
 			}
-			System.out.println(strikeCount + "S, " + ballCount + "Bì…ë‹ˆë‹¤.");
+			System.out.println(strikeCount + "S, " + ballCount + "BÀÔ´Ï´Ù.");
 			
-//			3S ë¼ë©´, ê²Œì„ ì¢…ë£Œ
+//			¶ó¸é, °ÔÀÓ Á¾·á
 			if(strikeCount == 3) {
-				System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤!");
+				System.out.println("ÃàÇÏÇÕ´Ï´Ù!!");
 				
-				System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.!");
+				System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.!");
 				break;
 			}
 
