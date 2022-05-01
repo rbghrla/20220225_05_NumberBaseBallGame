@@ -49,9 +49,7 @@ public class MainDrive {
 				myNumbers[i] = inputNum / (int)Math.pow(10, len-1-i);
 				inputNum = inputNum % (int)Math.pow(10, len-1-i);
 			}
-			//myNumbers[0] = inputNum / 100;
-			//myNumbers[1] = (inputNum / 10) % 10;
-			//myNumbers[2] = inputNum % 10;
+			
 			int strikeCount = 0;
 			int ballCount = 0;
 			for (int i = 0; i < myNumbers.length; i++) {
